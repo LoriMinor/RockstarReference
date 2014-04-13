@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RockstarReference</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="greeting_message">Prepare yourself before rocking out!</string>
+    <string name="lblGuitarTuner">Guitar Tuner</string>
+    <string name="lblChordChart">Chord Chart</string>
+    <string name="lblMetronome">Metronome</string>
+    <string name="lblMore">Extras</string>
+    <string name="description_guitar">guitar</string>
+    <string name="title_activity_guitar_tuner">GuitarTunerActivity</string>
+    <string name="lblTuneGuitar">Tune your guitar!</string>
+    <string name="btnLowE">E</string>
+    <string name="lblStringA">A</string>
+    <string name="lblStringG">G</string>
+    <string name="lblStringD">D</string>
+    <string name="lblStringB">B</string>
+    <string name="lblStringHighE">e</string>
+    <string name="lblFinishedTuning">RockstarReference Home</string>
+    <string name="title_activity_chord_chart">Chord Charts</string>
+    <string name="lblChordChartWelcome">Learn or Review Chords!</string>
+    <string name="title_activity_metronome">Metronome</string>
+    <string name="lblMetronomeWelcome">Never miss a beat with RockstarReference metronome!   (Touch to start and stop)</string>
+    <string name="lblBpm70">70 BPM</string>
+    <string name="lblBpm90"></string>
+    <string name="btnBpm90">90 BPM</string>
+    <string name="lblBpm120">120 BPM</string>
+    <string name="lblBpm130">130 BPM</string>
+    <string name="lblBpm140">140 BPM</string>
+    <string name="lblBpm150">150 BPM</string>
+    <string name="lblBpm160">160 BPM</string>
+    <string name="lblBpm180">180 BPM</string>
+    <string name="txtSwipeChords">(Just swipe to the left to see the chord you need!)</string>
+    <string name="title_activity_extras">Extras</string>
+    <string name="txtExtras">Rockin\' Extras!</string>
+    <string name="lblRockNews">Rock News</string>
+    <string name="title_activity_view_rock_news">Rock News!</string>
+    <string name="lblBackExtras">Back to Extras</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="lblRecord">Record yourself rockin\' out!</string>
+    <string name="lblRecordBtn">Record</string>
+    <string name="txtNews">From the Rock and Roll Hall of Fame!</string>
+    <string name="lblRRmenu">RockstarReference Menu</string>
+    <string name="lblShopGuitars">Shop Guitars</string>
+    <string name="txtShopGuitars">Find your dream guitar!</string>
+    <string name="title_activity_shop_guitars">Shop Guitars</string>
+
+</resources>

@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_guitar"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MetronomeActivity" >
+
+    <Button
+        android:id="@+id/btnHomeFromMetronome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onReturnHomeClick"
+        android:text="@string/main_menu" />
+
+    <Button
+        android:id="@+id/btn70Bpm"
+        style="@style/styleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnBpm120"
+        android:layout_alignRight="@+id/btnBpm120"
+        android:layout_below="@+id/lblMetronomeWelcome"
+        android:layout_marginTop="34dp"
+        android:onClick="onBPM70click"
+        android:text="@string/lblBpm70" />
+
+    <TextView
+        android:id="@+id/lblMetronomeWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnHomeFromMetronome"
+        android:layout_alignParentTop="true"
+        android:text="@string/lblMetronomeWelcome" />
+
+    <Button
+        android:id="@+id/btnBpm90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn70Bpm"
+        android:layout_alignBottom="@+id/btn70Bpm"
+        android:layout_alignRight="@+id/lblMetronomeWelcome"
+        android:layout_marginRight="24dp"
+        android:text="@string/btnBpm90" />
+
+    <Button
+        android:id="@+id/btnBpm130"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnBpm120"
+        android:layout_alignBottom="@+id/btnBpm120"
+        android:layout_alignRight="@+id/btnBpm90"
+        android:text="@string/lblBpm130" />
+
+    <Button
+        android:id="@+id/btn140Bpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnBpm150"
+        android:layout_alignBottom="@+id/btnBpm150"
+        android:layout_alignLeft="@+id/btnBpm120"
+        android:text="@string/lblBpm140" />
+
+    <Button
+        android:id="@+id/btnBpm120"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblMetronomeWelcome"
+        android:layout_below="@+id/btn70Bpm"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lblBpm120" />
+
+    <Button
+        android:id="@+id/btnBpm160"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnHomeFromMetronome"
+        android:layout_alignLeft="@+id/btn140Bpm"
+        android:layout_marginBottom="52dp"
+        android:text="@string/lblBpm160" />
+
+    <Button
+        android:id="@+id/btnBpm180"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnBpm160"
+        android:layout_alignBottom="@+id/btnBpm160"
+        android:layout_alignLeft="@+id/btnBpm130"
+        android:text="@string/lblBpm180" />
+
+    <Button
+        android:id="@+id/btnBpm150"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnBpm130"
+        android:layout_below="@+id/btnBpm130"
+        android:layout_marginTop="21dp"
+        android:text="@string/lblBpm150" />
+
+</RelativeLayout>

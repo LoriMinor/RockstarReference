@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hsv_chord_chart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="horizontal"
+    android:onClick="onChordSwipe"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="horizontal"
+    tools:context=".ChordChartActivity"
+    android:background="#FFFF99" >
+
+    <Button
+        android:id="@+id/btnReturnFromChords"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onReturnHomeClick"
+        android:text="@string/lblRRmenu" />
+
+    <TextView
+        android:id="@+id/lblChordChartWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/lblChordChartWelcome" />
+
+    <HorizontalScrollView
+        android:id="@+id/hsvChordChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblChordChartWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp" >
+
+        <LinearLayout
+            android:id="@+id/llChords"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="OnChordSwipe"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgChordA"
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/a_major_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordAm"
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/a_minor_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordB"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/b_major_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordBm"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/b_minor_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordC"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/c_major_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordCm"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/c_minor_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordD"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/d_major_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordDm"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/d_minor_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordE"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/e_major_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordEm"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/e_minor_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordF"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/f_major_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordFm"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/f_minor_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordG"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/g_major_chord" />
+
+            <ImageView
+                android:id="@+id/imgChordGm"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/title_activity_chord_chart"
+                android:src="@drawable/g_minor_chord" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/txtSeeChords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnReturnFromChords"
+        android:layout_alignRight="@+id/btnReturnFromChords"
+        android:layout_below="@+id/hsvChordChart"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:text="@string/txtSwipeChords" />
+
+</RelativeLayout>

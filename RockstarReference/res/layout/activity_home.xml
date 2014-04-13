@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/description_guitar"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomeActivity"
+    android:background="#D1B6FA" >
+
+    <TextView
+        android:id="@+id/lblGreeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/greeting_message" />
+
+    <Button
+        android:id="@+id/btnChordChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnGuitarTuner"
+        android:layout_alignRight="@+id/btnGuitarTuner"
+        android:layout_below="@+id/btnGuitarTuner"
+        android:layout_marginTop="35dp"
+        android:onClick="onChordChartClick"
+        android:text="@string/lblChordChart" />
+
+    <Button
+        android:id="@+id/btnMetronome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnChordChart"
+        android:layout_alignRight="@+id/btnChordChart"
+        android:layout_below="@+id/btnChordChart"
+        android:layout_marginTop="34dp"
+        android:onClick="onMetronomeClick"
+        android:text="@string/lblMetronome" />
+
+    <Button
+        android:id="@+id/btnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMetronome"
+        android:layout_alignRight="@+id/btnMetronome"
+        android:layout_below="@+id/btnMetronome"
+        android:layout_marginTop="30dp"
+        android:onClick="onExtrasClick"
+        android:text="@string/lblMore" />
+
+    <Button
+        android:id="@+id/btnGuitarTuner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/lblGreeting"
+        android:layout_below="@+id/lblGreeting"
+        android:layout_marginTop="42dp"
+        android:layout_toRightOf="@+id/imgStratIcon"
+        android:onClick="onGuitarTunerClick"
+        android:text="@string/lblGuitarTuner" />
+
+    <ImageView
+        android:id="@+id/imgStratIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnChordChart"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/description_guitar"
+        android:src="@drawable/ic_stratocaster_circle" />
+
+    <ImageView
+        android:id="@+id/imgAcoustic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnChordChart"
+        android:layout_toLeftOf="@+id/btnChordChart"
+        android:contentDescription="@string/description_guitar"
+        android:src="@drawable/ic_acoustic" />
+
+    <ImageView
+        android:id="@+id/imgLesPaul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnMetronome"
+        android:layout_toLeftOf="@+id/btnMetronome"
+        android:contentDescription="@string/description_guitar"
+        android:src="@drawable/ic_les_paul" />
+
+    <ImageView
+        android:id="@+id/imgFlyingV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnMore"
+        android:layout_toLeftOf="@+id/btnMore"
+        android:contentDescription="@string/description_guitar"
+        android:src="@drawable/ic_flying_v" />
+
+</RelativeLayout>

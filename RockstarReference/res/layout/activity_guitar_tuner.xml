@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7D9EC0"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GuitarTunerActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnHomeFromTuner" >
+
+        <Button
+            android:id="@+id/btnStringLowE"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnLowE" />
+
+        <Button
+            android:id="@+id/btnStringA"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblStringA" />
+
+        <Button
+            android:id="@+id/btnStringD"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblStringD" />
+
+        <Button
+            android:id="@+id/btnStringG"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblStringG" />
+
+        <Button
+            android:id="@+id/btnStringB"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblStringB" />
+
+        <Button
+            android:id="@+id/btnStringHighE"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblStringHighE" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnHomeFromTuner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginRight="81dp"
+        android:onClick="onReturnHomeClick"
+        android:text="@string/main_menu" />
+
+    <ImageView
+        android:id="@+id/imgStrings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblTuneGuitar"
+        android:contentDescription="@string/description_guitar"
+        android:cropToPadding="true"
+        android:src="@drawable/guitar_string_help" />
+
+    <TextView
+        android:id="@+id/lblTuneGuitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/lblTuneGuitar"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
