@@ -7,6 +7,13 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 
+/**
+ * @author Lori Minor
+ * 
+ * This activity is the first screen that the user will interact with, andn it serves as a main menu.  
+ * From this activity, the user may select which function that he/she would like to use.
+ *	
+ */
 public class HomeActivity extends Activity {
 
 	@Override
@@ -21,6 +28,13 @@ public class HomeActivity extends Activity {
 		getMenuInflater().inflate(R.menu.home, menu);
 		return true;
 	}
+	/**
+	 * The following methods will launch the activity that the user selects by clicking on one of the 
+	 * buttons on the main menu.
+	 * 
+	 * @param v the view for the activity
+	 */
+
 	//initialize and assign action for clicking on guitar tuner button
 	public void onGuitarTunerClick(View v){
 
@@ -30,7 +44,7 @@ public class HomeActivity extends Activity {
 		startActivity(startTunerIntent);
 
 	}
-	//launch the chord chart
+	//launch the chord chart activity
 	public void onChordChartClick(View v){
 
 		Intent chordChartStart = new Intent(this, ChordChartActivity.class);
@@ -47,12 +61,13 @@ public class HomeActivity extends Activity {
 		//will take user to the metronome activity
 		startActivity(metronomeStart);
 	}
-	
-	public void onExtrasClick(View v){
-	
-	Intent showExtras = new Intent(this, ExtrasActivity.class);
 
-	
-	startActivity(showExtras);
+	//launches the extras menu
+	public void onExtrasClick(View v){
+
+		Intent showExtras = new Intent(this, ExtrasActivity.class);
+
+		//displays the extras activity 
+		startActivity(showExtras);
 	}
 }

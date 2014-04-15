@@ -9,18 +9,23 @@ import android.webkit.WebView;
 
 public class ViewRockNewsActivity extends Activity {
 
-	private WebView rockNews;
-	
+	private WebView rockNews;  //web view to display content
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_view_rock_news);
-		
+
+		//initializes the web view
 		rockNews = (WebView)findViewById(R.id.wvRockNews);
+
+		//enables javaScript
 		rockNews.getSettings().setJavaScriptEnabled(true);
+
+		//loads the news from web source
 		rockNews.loadUrl("http://www.rockhall.com");
-		
-		
+
+
 	}
 
 	@Override
@@ -29,7 +34,8 @@ public class ViewRockNewsActivity extends Activity {
 		getMenuInflater().inflate(R.menu.view_rock_news, menu);
 		return true;
 	}
-	
+
+	//return home
 	public void onClickBackExtras(View v){
 
 		Intent returnToExtras = new Intent(this, ExtrasActivity.class);

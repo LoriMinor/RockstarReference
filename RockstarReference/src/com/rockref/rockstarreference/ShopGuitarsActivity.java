@@ -8,16 +8,18 @@ import android.view.View;
 import android.webkit.WebView;
 
 public class ShopGuitarsActivity extends Activity {
-	
-	private WebView shopGuitars;
+
+	private WebView shopGuitars; //web view to display content
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_shop_guitars);
-		
+
+		//initialize web view for shop guitars
 		shopGuitars = (WebView)findViewById(R.id.wvShopGuitars);
-		//shopGuitars.getSettings().setJavaScriptEnabled(true);
+
+		//loads content from web source
 		shopGuitars.loadUrl("http://www.guitarcenter.com");
 	}
 
@@ -27,7 +29,8 @@ public class ShopGuitarsActivity extends Activity {
 		getMenuInflater().inflate(R.menu.shop_guitars, menu);
 		return true;
 	}
-	
+
+	//return home
 	public void onBackToExtrasClick(View v){
 
 		Intent backToExtras = new Intent(this, ExtrasActivity.class);

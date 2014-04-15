@@ -9,9 +9,17 @@ import android.view.View;
 import android.widget.Button;
 
 
+/**
+ * @author Lori Minor
+ * 
+ * This activity provides a metronome that allows the user to maintain tempo (rhythm or timing of song).
+ * The buttons provide options for eight common tempos (speeds), measured in beats per minute (BPM).
+ * 
+ */
+
 public class MetronomeActivity extends Activity {
 
-	int flag = 0;
+	int flag = 0; //variable to keep track of button clicks
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +28,11 @@ public class MetronomeActivity extends Activity {
 
 
 		/* BPM 70 */
+
 		//finds location of audio file for this bpm
 		final MediaPlayer bpm70 = MediaPlayer.create(this, R.raw.bpm_70);
 
-		//initialize the "BPM 70" button and listener that will play that tempo
+		//initialize the "BPM 70" button and listener that will play tempo
 		Button btn70Bpm = (Button) findViewById(R.id.btn70Bpm);
 
 		btn70Bpm.setOnClickListener(new View.OnClickListener() {
@@ -33,26 +42,27 @@ public class MetronomeActivity extends Activity {
 			public void onClick(View v) {
 
 				//starts audio for tempo
-
 				if (flag == 0){
 
 					bpm70.start();
 
-					flag++;
+					flag++; //increments flag variable so user may stop tempo playback
 
+					//while audio is already playing
 				} else {
-					bpm70.stop();
-					bpm70.release();
+
+					//stops and releases audio file when user hits button again to stop
+					bpm70.stop(); 
+					bpm70.release(); 
+
+					//reset flag variable to zero
 					flag = 0;
 				}
-
-
-
-
 			}			
 		}); 
 
 		/* BPM 90 */
+
 		//finds location of audio file for this bpm
 		final MediaPlayer bpm90 = MediaPlayer.create(this, R.raw.bpm_90);
 
@@ -65,21 +75,28 @@ public class MetronomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
+				//starts audio for tempo
 				if (flag == 0){
 
 					bpm90.start();
 
-					flag++;
+					flag++; //increments flag variable so user may stop tempo if needed
 
+					//while audio is already playing	
 				} else {
+
+					//stops and releases audio file when user hits button again to stop
 					bpm90.stop();
 					bpm90.release();
+
+					//reset flag variable to zero
 					flag = 0;
 				}
 			}			
 		}); 
 
 		/* BPM 120 */
+
 		//finds location of audio file for this bpm
 		final MediaPlayer bpm120 = MediaPlayer.create(this, R.raw.bpm_120);
 
@@ -92,21 +109,28 @@ public class MetronomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
+				//starts audio for tempo
 				if (flag == 0){
 
 					bpm120.start();
 
-					flag++;
+					flag++; //increments flag variable so user may stop tempo if needed
 
+					//while audio is already playing	
 				} else {
+
+					//stops and releases audio file when user hits button again to stop
 					bpm120.stop();
 					bpm120.release();
+
+					//reset flag variable to zero
 					flag = 0;
 				}
 			}			
 		}); 
 
 		/* BPM 130 */
+
 		//finds location of audio file for this bpm
 		final MediaPlayer bpm130 = MediaPlayer.create(this, R.raw.bpm_130);
 
@@ -119,21 +143,28 @@ public class MetronomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
+				//starts audio for tempo
 				if (flag == 0){
 
 					bpm130.start();
 
-					flag++;
+					flag++; //increments flag variable so user may stop tempo if needed
 
+					//while audio is already playing	
 				} else {
+
+					//stops and releases audio file when user hits button again to stop
 					bpm130.stop();
 					bpm130.release();
+
+					//reset flag variable to zero
 					flag = 0;
 				}
 			}			
 		}); 
 
 		/* BPM 140 */
+
 		//finds location of audio file for this bpm
 		final MediaPlayer bpm140 = MediaPlayer.create(this, R.raw.bpm_140);
 
@@ -146,21 +177,28 @@ public class MetronomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
+				//starts audio for tempo
 				if (flag == 0){
 
 					bpm140.start();
 
-					flag++;
+					flag++; //increments flag variable so user may stop tempo if needed
 
+					//while audio is already playing
 				} else {
+
+					//stops and releases audio file when user hits button again to stop
 					bpm140.stop();
 					bpm140.release();
+
+					//reset flag variable to zero
 					flag = 0;
 				}
 			}			
 		}); 
 
 		/* BPM 150 */
+
 		//finds location of audio file for this bpm
 		final MediaPlayer bpm150 = MediaPlayer.create(this, R.raw.bpm_150);
 
@@ -173,21 +211,28 @@ public class MetronomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
+				//starts audio for tempo
 				if (flag == 0){
 
 					bpm150.start();
 
-					flag++;
+					flag++;  //increments flag variable so user may stop tempo if needed
 
+					//while audio is already playing
 				} else {
+
+					//stops and releases audio file when user hits button again to stop
 					bpm150.stop();
 					bpm150.release();
+
+					//reset flag variable to zero
 					flag = 0;
 				}
 			}			
 		}); 
 
 		/* BPM 160 */
+
 		//finds location of audio file for this bpm
 		final MediaPlayer bpm160 = MediaPlayer.create(this, R.raw.bpm_160);
 
@@ -200,21 +245,28 @@ public class MetronomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
+				//starts audio for tempo
 				if (flag == 0){
 
 					bpm160.start();
 
-					flag++;
+					flag++; //increments flag variable so user may stop tempo if needed
 
+					//while audio is already playing
 				} else {
+
+					//stops and releases audio file when user hits button again to stop
 					bpm160.stop();
 					bpm160.release();
+
+					//reset flag variable to zero
 					flag = 0;
 				}
 			}			
 		}); 
 
 		/* BPM 180 */
+
 		//finds location of audio file for this bpm
 		final MediaPlayer bpm180 = MediaPlayer.create(this, R.raw.bpm_180);
 
@@ -227,15 +279,19 @@ public class MetronomeActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 
+				//starts audio for tempo
 				if (flag == 0){
 
 					bpm180.start();
 
-					flag++;
+					flag++; //increments flag variable so user may stop tempo if needed
 
+					//while audio is already playing
 				} else {
 					bpm180.stop();
 					bpm180.release();
+
+					//reset flag variable to zero
 					flag = 0;
 				}
 			}			
@@ -248,8 +304,6 @@ public class MetronomeActivity extends Activity {
 		getMenuInflater().inflate(R.menu.metronome, menu);
 		return true;
 	}
-
-
 
 	//to get back to main menu
 	public void onReturnHomeClick(View v){

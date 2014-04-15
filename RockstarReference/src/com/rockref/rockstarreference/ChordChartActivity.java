@@ -6,6 +6,14 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 
+/**
+ * @author Lori Minor
+ * 
+ * This activity contains chord charts for fourteen different chords.  The user may view each chord chart
+ * by swiping to the left while touching each chord chart image.  Most of the code for this activity is contained in the 
+ * layout xml file, as it uses mostly images in a horizontal scroll view to display each chord chart.
+ *
+ */
 public class ChordChartActivity extends Activity {
 
 	@Override
@@ -20,11 +28,6 @@ public class ChordChartActivity extends Activity {
 		getMenuInflater().inflate(R.menu.chord_chart, menu);
 		return true;
 	}
-
-	/* Note: the chord chart contained in the layout is there for a placeholder.
-	 * 
-	 * I will eventually add a better visual, possibly with audio as well.
-	 */
 
 
 	//onClick method to return to main menu

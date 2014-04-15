@@ -13,7 +13,7 @@ import android.widget.Button;
 /**
  * @author Lori Minor
  * 
- *	This class allows the user to tune his/her guitar.
+ *	This activity allows the user to tune his/her guitar.
  */
 public class GuitarTunerActivity extends Activity {
 
@@ -25,8 +25,12 @@ public class GuitarTunerActivity extends Activity {
 
 		/**
 		 * The following methods will play audio that corresponds with the buttons for each
-		 * string of the guitar.
+		 * string of the guitar.  The tones will play for about five seconds so that the user may
+		 * properly tune his/her guitar.  Note: the ability to stop the notes from ringing out
+		 * is intentional due to the way in which guitarists tune their guitars.  If the user needs more
+		 * time to accurately tune, he/she may click on the button again.
 		 */
+
 
 		/* tune low E string */
 
@@ -141,9 +145,7 @@ public class GuitarTunerActivity extends Activity {
 				highE.start();
 			}			
 		}); 
-
 	}
-
 
 	//this will allow the user to return to the home menu, the first activity
 	public void onReturnHomeClick(View v){
